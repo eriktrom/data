@@ -32,14 +32,14 @@
     "ember-cli-version-checker": "^1.1.4",
     "ember-inflector": "^1.9.4",
     "inflection": "^1.8.0",
-    "silent-error": "^1.0.0"
+    "silent-error": "^1.0.0",
+    "babel-plugin-feature-flags": "^0.2.0",
+    "broccoli-babel-transpiler": "^5.5.0",
+    "babel-plugin-filter-imports": "^0.2.0"
   },
   "devDependencies": {
-    "babel-plugin-feature-flags": "^0.2.0",
-    "babel-plugin-filter-imports": "^0.2.0",
     "bower": "^1.6.5",
     "broccoli-asset-rev": "^2.1.2",
-    "broccoli-babel-transpiler": "^5.5.0",
     "broccoli-concat": "0.0.13",
     "broccoli-funnel": "^1.0.0",
     "broccoli-jscs": "^1.1.0",

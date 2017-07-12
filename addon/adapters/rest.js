@@ -1123,12 +1123,12 @@ const RESTAdapter = Adapter.extend(BuildURLMixin, {
       hash.data = JSON.stringify(hash.data);
     }
 
-    let headers = get(this, 'headers');
-    if (headers !== undefined) {
-      hash.beforeSend = function (xhr) {
-        Object.keys(headers).forEach((key) =>  xhr.setRequestHeader(key, headers[key]));
-      };
-    }
+    hash.beforeSend = (xhr) => {
+      let headers = get(this, 'headers');
+      if (headers !== undefined) {
+        Object.keys(headers).forEach((key) => xhr.setRequestHeader(key, headers[key]));
+      }
+    };
 
     return hash;
   },
